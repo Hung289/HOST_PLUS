@@ -1,0 +1,28 @@
+.container {
+    max-width: 1200px;
+    
+    margin: 0 auto;
+
+
+    @media only screen and (max-width: $bp-largest) {
+        max-width: 100rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        max-width: 100rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        max-width: 80rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        max-width: 80rem;
+        padding:0 4rem;
+    }
+
+    @media only screen and(max-width: $bp-smallest) {
+        max-width: 70rem;
+        padding:0 4rem;
+    }
+}

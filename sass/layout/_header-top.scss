@@ -1,0 +1,44 @@
+.header-t-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and(max-width:$bp-large) {
+        justify-content: end;
+    }
+    &__left {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        @media only screen and(max-width:$bp-large) {
+            display: none;
+        }
+
+        li {
+            padding: 1.5rem 0rem 1.5rem 2.5rem;
+
+            i {
+                margin-right: .4rem;
+            }
+        }
+    }
+
+    &__right {
+
+        @media only screen and(max-width:$bp-large) {
+            padding: 1.5rem 0;
+            
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $color-text-grey-1;
+                }
+            }
+        }
+    }
+}

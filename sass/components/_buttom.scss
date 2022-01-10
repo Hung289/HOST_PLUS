@@ -1,0 +1,19 @@
+.btn {
+    border: none;
+    color: #fff;
+    padding: 1.8rem 4.5rem;
+    text-transform: uppercase;
+    transition: all .2s;
+    cursor: pointer;
+    &--primary {
+        background-color: $color-primary;
+    }
+
+    &--black {
+        background-color: $color-black;
+    }
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}

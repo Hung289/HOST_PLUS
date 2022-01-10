@@ -1,0 +1,123 @@
+body {
+    font-family: $font-primary;
+    line-height: 1.7;
+}
+.heading {
+    &-center {
+        text-align: center;
+    }
+
+    &-primary {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700;
+        position: relative;
+
+        &--left {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 5rem;
+                height: 0.1rem;
+                background-color: $color-dark-primary;
+                top: 5.7rem;
+                left: 0;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 3rem;
+                height: 0.1rem;
+                background-color: $color-dark-primary;
+                top: 6rem;
+                left: 0;
+            }
+        }
+
+        &--center {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 5rem;
+                height: 0.1rem;
+                background-color: $color-dark-primary;
+                top: 5.7rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 3rem;
+                height: 0.1rem;
+                background-color: $color-dark-primary;
+                top: 6rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &-white {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700;
+        position: relative;
+        color: $color-text-white;
+        &--left {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 5rem;
+                height: 0.1rem;
+                background-color: $color-text-white;
+                top: 5.7rem;
+                left: 0;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 3rem;
+                height: 0.1rem;
+                background-color: $color-text-white;
+                top: 6rem;
+                left: 0;
+            }
+        }
+
+        &--center {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 5rem;
+                height: 0.1rem;
+                background-color: $color-text-white;
+                top: 5.7rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 3rem;
+                height: 0.1rem;
+                background-color: $color-text-white;
+                top: 6rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.heading-thirty {
+    font-size: 1.4rem;
+    color: $color-text-light-1;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
